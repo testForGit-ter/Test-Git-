@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * GiangVien
  */
 class GiangVien {
-    static int ma = 1;
+    static int ma = 2;
     String ten, hesokk, MA;
     double hesoLuong;
     int hour;
@@ -19,7 +19,7 @@ class GiangVien {
         this.hesoLuong = hesoLuong;
         this.hesokk = hesoKK;
         this.hour = hour;
-        MA = "PM" + String.format("%03d", ma++);
+        MA = "PM" + String.format("%03d", ma+=1);
     }
 
     public long GetLuong()
